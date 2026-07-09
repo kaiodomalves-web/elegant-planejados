@@ -1,0 +1,329 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <!-- Configuracoes basicas da pagina e responsividade. -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Elegant Planejados cria moveis sob medida com acabamento premium, projeto personalizado e atendimento proximo."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Elegant Planejados</title>
+  </head>
+  <body class="no-js">
+    <!-- Header fixo: logo, menu, botao mobile e chamada para WhatsApp. -->
+    <header class="site-header" data-header>
+      <a href="#home" class="brand" aria-label="Elegant Planejados">
+        <img src="img/LOGOTIPO.png" alt="Elegant Planejados" />
+      </a>
+
+      <!-- Botao que aparece no celular para abrir/fechar o menu. -->
+      <button
+        class="menu-toggle"
+        type="button"
+        data-menu-toggle
+        aria-label="Abrir menu"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <!-- Links de navegacao que levam para as secoes da propria pagina. -->
+      <nav class="main-nav" data-menu>
+        <a href="#home">Inicio</a>
+        <a href="#about">Sobre</a>
+        <a href="#projects">Projetos</a>
+        <a href="#reviews">Clientes</a>
+        <a href="#instagram">Instagram</a>
+      </nav>
+
+      <a
+        class="header-cta"
+        href="https://wa.me/5511940694023"
+        target="_blank"
+        rel="noreferrer"
+      >
+        Orcamento
+      </a>
+    </header>
+
+    <main>
+      <!-- Hero: primeira dobra do site, com imagem de fundo e chamada principal. -->
+      <section class="hero" id="home">
+        <!-- Camada visual usada como fundo do hero. O CSS coloca a imagem aqui. -->
+        <div class="hero-media" aria-hidden="true"></div>
+        <div class="hero-content reveal">
+          <p class="eyebrow">Moveis planejados sob medida</p>
+          <h1>Ambientes exclusivos para viver melhor todos os dias.</h1>
+          <p>
+            Projetos personalizados, marcenaria precisa e acabamento sofisticado
+            para transformar sua casa em um espaco funcional, elegante e feito
+            para a sua rotina.
+          </p>
+          <div class="hero-actions">
+            <a
+              class="btn primary"
+              href="https://wa.me/5511991538734"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Cote seu projeto
+            </a>
+            <a class="btn ghost" href="#projects">Ver ambientes</a>
+          </div>
+        </div>
+        <div class="hero-panel reveal">
+          <span>Atendimento consultivo</span>
+          <strong>Do primeiro desenho a montagem final</strong>
+        </div>
+      </section>
+
+      <!-- Numeros/diferenciais rapidos para passar confianca logo apos o hero. -->
+      <section class="metrics reveal" aria-label="Diferenciais">
+        <article>
+          <strong>100%</strong>
+          <span>sob medida</span>
+        </article>
+        <article>
+          <strong>3D</strong>
+          <span>visualizacao do projeto</span>
+        </article>
+        <article>
+          <strong>Premium</strong>
+          <span>acabamento e montagem</span>
+        </article>
+        <article>
+          <strong>SP</strong>
+          <span>atendimento regional</span>
+        </article>
+      </section>
+
+      <!-- Sobre: texto institucional + composicao de imagens. -->
+      <section class="split-section" id="about">
+        <div class="section-copy reveal">
+          <p class="eyebrow">Sobre a Elegant</p>
+          <h2>Marcenaria moderna com cuidado de perto.</h2>
+          <p>
+            A Elegant Planejados une projeto, tecnica e atendimento proximo para
+            criar cozinhas, quartos, banheiros, salas e areas comerciais com
+            melhor aproveitamento de espaco.
+          </p>
+          <p>
+            Cada detalhe passa por um processo pensado para durabilidade,
+            conforto visual e uma montagem limpa, com orientacao clara em cada
+            etapa.
+          </p>
+          <a
+            class="text-link"
+            href="https://wa.me/5511991538734"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Falar com especialista
+          </a>
+        </div>
+        <div class="image-stack reveal">
+          <img
+            class="image-main"
+            src="img/about.png"
+            alt="Ambiente planejado elegante"
+          />
+          <img
+            class="image-float"
+            src="img/cozinha_elegant.jpeg"
+            alt="Cozinha planejada"
+          />
+        </div>
+      </section>
+
+      <!-- Galeria horizontal com algumas imagens dos ambientes. -->
+      <section class="gallery-strip" aria-label="Galeria">
+        <img src="img/galeria_1.jpg" alt="Projeto de interiores 1" />
+        <img src="img/galeria_2.jpg" alt="Projeto de interiores 2" />
+        <img src="img/galeria_3.jpg" alt="Projeto de interiores 3" />
+        <img src="img/galeria_4.jpg" alt="Projeto de interiores 4" />
+      </section>
+
+      <!-- Projetos: cards com imagem, categoria e descricao curta. -->
+      <section class="projects" id="projects">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Projetos realizados</p>
+          <h2>Ambientes com acabamento que aparece no detalhe.</h2>
+        </div>
+
+        <div class="project-grid">
+          <article class="project-card reveal">
+            <img
+              src="img/projeto_1.jpeg"
+              alt="Projeto planejado para cozinha"
+            />
+            <div>
+              <span>Cozinha</span>
+              <strong>Linhas limpas e alto aproveitamento</strong>
+            </div>
+          </article>
+          <article class="project-card reveal">
+            <img src="img/projeto_2.jpeg" alt="Projeto planejado residencial" />
+            <div>
+              <span>Residencial</span>
+              <strong>Projeto sob medida para a rotina</strong>
+            </div>
+          </article>
+          <article class="project-card reveal">
+            <img
+              src="img/projeto_3.jpeg"
+              alt="Ambiente com moveis planejados"
+            />
+            <div>
+              <span>Ambiente</span>
+              <strong>Texturas, proporcao e acabamento</strong>
+            </div>
+          </article>
+          <article class="project-card reveal">
+            <img src="img/projeto_4.jpeg" alt="Projeto de marcenaria moderna" />
+            <div>
+              <span>Marcenaria</span>
+              <strong>Detalhes pensados para durar</strong>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- Avaliacoes/depoimentos: prova social dos clientes. -->
+      <section class="reviews" id="reviews">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Clientes</p>
+          <h2>Prova social com cara de marca confiavel.</h2>
+        </div>
+
+        <div class="review-grid">
+          <article class="review-card reveal">
+            <img src="img/cliente_1.jpg" alt="Foto de Cleverson Bolko" />
+            <div class="stars">★★★★☆</div>
+            <p>
+              "Atendimento excelente, com pessoas competentes e comprometidas em
+              realizar o sonho do cliente."
+            </p>
+            <strong>Cleverson Bolko</strong>
+          </article>
+          <article class="review-card featured reveal">
+            <img
+              src="img/cliente_2.jpg"
+              alt="Foto de G. Bornaschella Cordeiro"
+            />
+            <div class="stars">★★★★★</div>
+            <p>
+              "Qualidade, pontualidade, atendimento pre e pos-venda. Somos
+              atendidos com excelencia."
+            </p>
+            <strong>G. Bornaschella Cordeiro</strong>
+          </article>
+          <article class="review-card reveal">
+            <img src="img/cliente_3.jpg" alt="Foto de Roberto Campidelli" />
+            <div class="stars">★★★★★</div>
+            <p>
+              "Moveis que falam por si. Atendimento de alto nivel, da proposta
+              ate a montagem."
+            </p>
+            <strong>Roberto Campidelli</strong>
+          </article>
+        </div>
+      </section>
+
+      <!-- Instagram: embeds oficiais dos posts enviados pelo cliente. -->
+      <section class="instagram" id="instagram">
+        <div class="instagram-copy reveal">
+          <p class="eyebrow">Do Instagram</p>
+          <h2>Projetos reais direto do perfil da Elegant.</h2>
+          <p>Os posts abaixo do nosso instagram.</p>
+          <a
+            class="btn dark"
+            href="https://www.instagram.com/_elegant_planejados"
+            target="_blank"
+            rel="noreferrer"
+          >
+            @_elegant_planejados
+          </a>
+        </div>
+
+        <div class="instagram-embeds reveal">
+          <article class="instagram-embed-card">
+            <!-- Para trocar o post, altere o link em data-instgrm-permalink e no href. -->
+            <blockquote
+              class="instagram-media"
+              data-instgrm-permalink="https://www.instagram.com/p/DBbYXQkx3XC/"
+              data-instgrm-version="14"
+            >
+              <a
+                href="https://www.instagram.com/p/DBbYXQkx3XC/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Ver publicacao no Instagram
+              </a>
+            </blockquote>
+          </article>
+
+          <article class="instagram-embed-card">
+            <!-- Segundo post do Instagram exibido na pagina. -->
+            <blockquote
+              class="instagram-media"
+              data-instgrm-permalink="https://www.instagram.com/p/DBgyhKPR0oa/"
+              data-instgrm-version="14"
+            >
+              <a
+                href="https://www.instagram.com/p/DBgyhKPR0oa/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Ver publicacao no Instagram
+              </a>
+            </blockquote>
+          </article>
+        </div>
+      </section>
+
+      <!-- Chamada final para levar o visitante ao WhatsApp. -->
+      <section class="cta-band reveal">
+        <p class="eyebrow">Vamos projetar?</p>
+        <h2>Seu ambiente pode sair do papel com uma conversa simples.</h2>
+        <a
+          class="btn primary"
+          href="https://wa.me/5511991538734"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Chamar no WhatsApp
+        </a>
+      </section>
+    </main>
+
+    <!-- Rodape com logo, links rapidos e direitos autorais. -->
+    <footer class="footer">
+      <div>
+        <img src="img/LOGOTIPO.png" alt="Elegant Planejados" />
+        <p>Sofisticacao e excelencia em moveis planejados.</p>
+      </div>
+      <nav>
+        <a href="#home">Inicio</a>
+        <a href="#about">Sobre</a>
+        <a href="#projects">Projetos</a>
+        <a href="#instagram">Instagram</a>
+      </nav>
+      <p>© 2026 Elegant Planejados. Todos os direitos reservados.</p>
+    </footer>
+
+    <!-- Script oficial do Instagram: transforma os blockquotes em posts incorporados. -->
+    <script async src="https://www.instagram.com/embed.js"></script>
+    <!-- Script do site: menu mobile, animacoes e processamento do Instagram. -->
+    <script src="script.js"></script>
+  </body>
+</html>
